@@ -1,3 +1,11 @@
+.btn {
+  border-radius: 0; }
+
+.btn-dark {
+  background-color: #000; }
+  .btn-dark:hover {
+    background-color: #6c757d; }
+
 ul {
   margin: 0;
   padding: 0;
@@ -9,7 +17,7 @@ header {
   width: 100%; }
   header .navbar {
     background-color: #000; }
-    header .navbar .navbar-logo {
+    header .navbar .logo-link {
       color: #fff; }
   header nav .nav-link {
     color: #fff;
@@ -20,6 +28,14 @@ header {
     margin-right: 20px; }
     header .menu-right svg .heroicon-ui {
       fill: #fff; }
+  header .logo, header .main-menu, header .menu-right {
+    flex: 1; }
+  header .logo {
+    justify-content: flex-start; }
+  header .main-menu {
+    justify-content: center; }
+  header .menu-right {
+    justify-content: flex-end; }
 
 .body-content {
   margin-top: 56px;
@@ -46,16 +62,25 @@ footer ul li {
   font-size: 12px; }
   .newsletter .form-control-email {
     display: inline-block;
-    width: 200px;
+    width: 220px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-radius: 0;
     padding-top: 3px;
-    padding-bottom: 3px; }
+    padding-bottom: 3px;
+    margin: 0 10px; }
   .newsletter .btn-submit {
-    border-radius: 0;
     padding-top: 3px;
     padding-bottom: 3px;
     border-width: 2px;
     font-size: inherit; }
+
+.bx-wrapper {
+  border: 0; }
+  .bx-wrapper .bx-pager {
+    bottom: 40px; }
+  .bx-wrapper .shop-now {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 70px; }

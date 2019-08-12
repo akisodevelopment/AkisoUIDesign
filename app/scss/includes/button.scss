@@ -1,0 +1,11 @@
+.btn {
+    border-radius: 0;
+}
+
+.btn-dark {
+    background-color: $black;
+    
+    &:hover {
+        background-color: #6c757d;
+    }
+}

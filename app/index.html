@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/slider/jquery.bxslider.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"/> 
+    <!-- bxSlider CSS file -->
 </head>
 <body>
     <header>
         <nav class="navbar justify-content-between">
             <!-- Navbar content -->
-            <a href="#" class="navbar-brand navbar-logo">
-                Logo
-            </a>
+            <div class="logo">
+                    <a href="#" class="logo-link">
+                            Logo
+                    </a>
+            </div>
             <ul class="nav main-menu">
                 <li class="nav-item active"><a href="#Home" class="nav-link">Shop</a></li>
                 <li class="nav-item"><a href="#Home" class="nav-link">Popular</a></li>
@@ -52,7 +56,20 @@
     </header>
     <section class="body-content">
         <div class="row">
-
+            <div class="col">
+                    <ul class="bxslider">
+                        <li>
+                            <img src="https://via.placeholder.com/1500x500?text=slide1" />
+                            <div class="shop-now">
+                                <a href="#shopnow" class="btn btn-dark btn-shop">Shop</a>
+                            </div>
+                        </li>
+                        <li><img src="https://via.placeholder.com/1500x500?text=slide2" /></li>
+                        <li><img src="https://via.placeholder.com/1500x500?text=slide3" /></li>
+                        <li><img src="https://via.placeholder.com/1500x500?text=slide4" /></li>
+                        <li><img src="https://via.placeholder.com/1500x500?text=slide5" /></li>
+                    </ul>
+            </div>
         </div>
     </section>
     <footer class="px-5 py-2">
@@ -111,5 +128,18 @@
                 </div>
             </div>
     </footer>
+    <!-- jQuery library -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                mode: 'horizontal',
+                infiniteLoop: true,
+                touchEnabled: false
+            });
+        });
+    </script>
 </body> 
 </html>
