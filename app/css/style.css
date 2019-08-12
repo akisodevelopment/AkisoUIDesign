@@ -1,0 +1,61 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header .navbar {
+    background-color: #000; }
+    header .navbar .navbar-logo {
+      color: #fff; }
+  header nav .nav-link {
+    color: #fff;
+    text-transform: uppercase; }
+  header .menu-right svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px; }
+    header .menu-right svg .heroicon-ui {
+      fill: #fff; }
+
+.body-content {
+  margin-top: 56px;
+  min-height: 450px; }
+
+footer h3 {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+footer ul li {
+  font-size: 12px; }
+  footer ul li a {
+    color: #8e8b8b; }
+    footer ul li a:hover {
+      color: #8e8b8b;
+      text-decoration: none; }
+
+.social-links img {
+  width: 16px; }
+
+.newsletter {
+  font-size: 12px; }
+  .newsletter .form-control-email {
+    display: inline-block;
+    width: 200px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+  .newsletter .btn-submit {
+    border-radius: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-width: 2px;
+    font-size: inherit; }

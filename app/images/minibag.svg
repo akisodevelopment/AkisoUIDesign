@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                }
+            </style>
+        </defs>
+        <title/>
+        <g data-name="159-Shopping Bag" id="_159-Shopping_Bag">
+            <rect class="cls-1" height="24" width="26" x="3" y="7" />
+            <path class="cls-1" d="M10,12V2a1,1,0,0,1,1-1h5" />
+            <path class="cls-1" d="M22,12V2a1,1,0,0,0-1-1H16" />
+            <line class="cls-1" x1="7" x2="13" y1="12" y2="12" />
+            <line class="cls-1" x1="19" x2="25" y1="12" y2="12" />
+        </g>
+    </svg>
