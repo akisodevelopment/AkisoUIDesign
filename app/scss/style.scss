@@ -8,9 +8,10 @@ ul {
 }
 
 header {
-    position: fixed;
-    top: 0;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 
     .navbar {
         background-color: $black;
@@ -38,9 +39,6 @@ header {
         }
     }
 
-    .logo, .main-menu, .menu-right {
-        flex: 1;
-    }
     .logo {
         justify-content: flex-start
     }
@@ -51,11 +49,16 @@ header {
         justify-content: flex-end;
     }
 }
+
 .body-content {
     margin-top: 56px;
     min-height: 450px;
 }
+
 footer {
+    margin-bottom: 30px;
+    border-top: 3px solid $black;
+
     h3 {
         font-size: 14px;
         margin: 0 0 15px 0;
@@ -108,9 +111,16 @@ footer {
 // Slider override css
 .bx-wrapper {
     border: 0;
+    margin-bottom: 10px;
+    box-shadow: none;
 
     .bx-pager {
         bottom: 40px;
+
+        &.bx-default-pager a {
+            background: none;
+            border: 1px solid black;
+        }
     }
 
     .shop-now {
@@ -118,5 +128,105 @@ footer {
         position: absolute;
         width: 100%;
         bottom: 70px;
+
+        .btn-shop-now {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
+}
+.home-container {
+    margin: 25px;
+
+    .home-banner {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        padding: 20px;
+        background-color: $gray;
+        .quote-title {
+            margin: 0;
+        }
+        .quote-subtitle {
+            color: $light-gray;
+        }
+    }
+
+    .category-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 32%;
+        background-color: $gray;
+        height: 200px;
+        position: relative;
+    }
+
+    .category-name {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .btn-shop-now {
+        position: absolute;
+        bottom: 25px;
+        font-size: 11px;   
+    }
+
+    .home-categories {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .home-section-title{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+.home-ingredient {
+    margin: 20px auto;
+    max-width: 980px;
+
+    .ingredient-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 50px;
+
+        .ingredient-box {
+            display: flex;
+            flex: 1 0 calc(21% - 80px);
+            margin: 10px 40px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $black;
+            border-radius: 50%;
+            color: $black;
+        }
+    }
+
+    .learn-more {
+        color: $black;
+        text-decoration: underline;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+    
+}
+
+.home-higlight-product {
+    margin: 40px 0;
+
+    .category-box {
+        text-align: center;
+    }
+}
+
+.testimonial-item {
+    padding: 20px 100px;
+    text-align: center;
 }

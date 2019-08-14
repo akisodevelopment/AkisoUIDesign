@@ -6,6 +6,8 @@
     background-color: $black;
     
     &:hover {
-        background-color: #6c757d;
+        background-color: $light-gray;
+        color: $black;
+        border-color: $light-gray;
     }
 }

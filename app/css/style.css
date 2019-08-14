@@ -4,7 +4,9 @@
 .btn-dark {
   background-color: #000; }
   .btn-dark:hover {
-    background-color: #6c757d; }
+    background-color: #8e8b8b;
+    color: #000;
+    border-color: #8e8b8b; }
 
 ul {
   margin: 0;
@@ -12,9 +14,10 @@ ul {
   list-style: none; }
 
 header {
+  width: 100%;
   position: fixed;
-  top: 0;
-  width: 100%; }
+  z-index: 1;
+  top: 0; }
   header .navbar {
     background-color: #000; }
     header .navbar .logo-link {
@@ -28,8 +31,6 @@ header {
     margin-right: 20px; }
     header .menu-right svg .heroicon-ui {
       fill: #fff; }
-  header .logo, header .main-menu, header .menu-right {
-    flex: 1; }
   header .logo {
     justify-content: flex-start; }
   header .main-menu {
@@ -41,19 +42,21 @@ header {
   margin-top: 56px;
   min-height: 450px; }
 
-footer h3 {
-  font-size: 14px;
-  margin: 0 0 15px 0;
-  padding: 0;
-  text-transform: uppercase; }
-
-footer ul li {
-  font-size: 12px; }
-  footer ul li a {
-    color: #8e8b8b; }
-    footer ul li a:hover {
-      color: #8e8b8b;
-      text-decoration: none; }
+footer {
+  margin-bottom: 30px;
+  border-top: 3px solid #000; }
+  footer h3 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-transform: uppercase; }
+  footer ul li {
+    font-size: 12px; }
+    footer ul li a {
+      color: #8e8b8b; }
+      footer ul li a:hover {
+        color: #8e8b8b;
+        text-decoration: none; }
 
 .social-links img {
   width: 16px; }
@@ -76,11 +79,88 @@ footer ul li {
     font-size: inherit; }
 
 .bx-wrapper {
-  border: 0; }
+  border: 0;
+  margin-bottom: 10px;
+  box-shadow: none; }
   .bx-wrapper .bx-pager {
     bottom: 40px; }
+    .bx-wrapper .bx-pager.bx-default-pager a {
+      background: none;
+      border: 1px solid black; }
   .bx-wrapper .shop-now {
     text-align: center;
     position: absolute;
     width: 100%;
     bottom: 70px; }
+    .bx-wrapper .shop-now .btn-shop-now {
+      padding-left: 20px;
+      padding-right: 20px; }
+
+.home-container {
+  margin: 25px; }
+  .home-container .home-banner {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    background-color: #cccccc; }
+    .home-container .home-banner .quote-title {
+      margin: 0; }
+    .home-container .home-banner .quote-subtitle {
+      color: #8e8b8b; }
+  .home-container .category-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    background-color: #cccccc;
+    height: 200px;
+    position: relative; }
+  .home-container .category-name {
+    margin: 0;
+    font-weight: 300; }
+  .home-container .btn-shop-now {
+    position: absolute;
+    bottom: 25px;
+    font-size: 11px; }
+  .home-container .home-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+  .home-container .home-section-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+
+.home-ingredient {
+  margin: 20px auto;
+  max-width: 980px; }
+  .home-ingredient .ingredient-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 50px; }
+    .home-ingredient .ingredient-items .ingredient-box {
+      display: flex;
+      flex: 1 0 calc(21% - 80px);
+      margin: 10px 40px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 50%;
+      color: #000; }
+  .home-ingredient .learn-more {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 300;
+    margin: 20px 0; }
+
+.home-higlight-product {
+  margin: 40px 0; }
+  .home-higlight-product .category-box {
+    text-align: center; }
+
+.testimonial-item {
+  padding: 20px 100px;
+  text-align: center; }
