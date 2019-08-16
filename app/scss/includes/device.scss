@@ -1,0 +1,10 @@
+@media only screen and (max-width : 768px) {
+    /* Styles */
+    .testimonial-item {
+        background-position: left top, right center;
+        background-size: 30%;
+    }
+    .submenu-item-wrap {
+        flex-grow: 2;
+    }
+}
