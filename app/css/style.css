@@ -8,6 +8,14 @@
     color: #000;
     border-color: #8e8b8b; }
 
+@media only screen and (max-width: 768px) {
+  /* Styles */
+  .testimonial-item {
+    background-position: left top, right center;
+    background-size: 30%; }
+  .submenu-item-wrap {
+    flex-grow: 2; } }
+
 ul {
   margin: 0;
   padding: 0;
@@ -16,7 +24,7 @@ ul {
 header {
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   top: 0; }
   header .navbar {
     background-color: #000; }
@@ -114,9 +122,12 @@ footer {
     align-items: center;
     justify-content: center;
     width: 32%;
-    background-color: #cccccc;
+    background-size: 100%;
     height: 200px;
+    transition: transform .2s;
     position: relative; }
+    .home-container .category-box:hover {
+      transform: scale(1.05); }
   .home-container .category-name {
     margin: 0;
     font-weight: 300; }
@@ -149,7 +160,16 @@ footer {
       justify-content: center;
       border: 1px solid #000;
       border-radius: 50%;
-      color: #000; }
+      color: #000;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 400; }
+      .home-ingredient .ingredient-items .ingredient-box span {
+        opacity: 0; }
+      .home-ingredient .ingredient-items .ingredient-box:hover {
+        background-image: none !important; }
+        .home-ingredient .ingredient-items .ingredient-box:hover span {
+          opacity: 1; }
   .home-ingredient .learn-more {
     color: #000;
     text-decoration: underline;
@@ -163,4 +183,50 @@ footer {
 
 .testimonial-item {
   padding: 20px 100px;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px;
+  background-image: url("../images/quote-start.png"), url("../images/quote-end.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 14%; }
+  .testimonial-item p {
+    color: gray; }
+  .testimonial-item h3 {
+    margin-top: 40px; }
+
+.home-higlight-product, .home-testimoninal {
+  padding: 0 30px; }
+  .home-higlight-product .bx-prev, .home-testimoninal .bx-prev {
+    left: -45px; }
+  .home-higlight-product .bx-next, .home-testimoninal .bx-next {
+    right: -45px; }
+
+/** Css for megamenu **/
+.main-menu .submenu-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+  overflow: auto; }
+
+.main-menu .submenu {
+  display: flex;
+  height: 200px;
+  margin: 20px;
+  font-size: 11px;
+  justify-content: space-evenly; }
+  .main-menu .submenu .submenu-item {
+    display: flex;
+    flex-direction: column; }
+    .main-menu .submenu .submenu-item .submenu-item-ul {
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .main-menu .submenu .submenu-item .submenu-item-link a {
+      text-transform: capitalize;
+      color: #8e8b8b; }
+
+.main-menu .nav-item:hover .submenu-wrapper {
+  display: block; }
