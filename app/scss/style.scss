@@ -1,6 +1,5 @@
 @import './includes/variables.scss';
 @import './includes/button.scss';
-@import './includes/device.scss';
 
 ul {
     margin: 0;
@@ -290,15 +289,19 @@ footer {
         overflow: auto;
     }
     .submenu {
-        display: flex;
+        float: left;
+        min-width: 980px;
         height: 200px;
         margin: 20px;
         font-size: 11px;
-        justify-content: space-evenly;
 
         .submenu-item {
+            float: left;
+            padding-right: 10px;
             display: flex;
             flex-direction: column;
+            margin: 0 20px;
+
 
             .submenu-item-ul {
                 height: 180px;
@@ -306,17 +309,42 @@ footer {
                 flex-direction: column;
                 flex-wrap: wrap;
             }
+
             .submenu-item-link {
                 a {
                     text-transform: capitalize;
                     color: $light-gray;
                 }
             }
+
+            &.submenu-item-wrap {
+                width: 200px;
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+
+        &.submenu-popular {
+            .submenu-item {
+                width: 150px;
+                text-align: center;
+                justify-content: center;
+                
+                label {
+                    margin-top: 10px;
+                }
+            }
         }
     }
     .nav-item:hover {
         .submenu-wrapper {
-            display: block;
+            display: flex;
+            justify-content: center;
         }
     }
 }
+
+@import './includes/device.scss';
