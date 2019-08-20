@@ -106,33 +106,37 @@ footer {
       margin: 0; }
     .home-container .home-banner .quote-subtitle {
       color: #8e8b8b; }
-  .home-container .category-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 32%;
-    background-size: 100%;
-    height: 200px;
-    transition: transform .2s;
-    position: relative; }
-    .home-container .category-box:hover {
-      transform: scale(1.05); }
-  .home-container .category-name {
-    margin: 0;
-    font-weight: 300; }
-  .home-container .btn-shop-now {
-    position: absolute;
-    bottom: 25px;
-    font-size: 11px; }
   .home-container .home-categories {
     display: flex;
     justify-content: space-between;
     margin-top: 20px; }
-  .home-container .home-section-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px; }
+
+.category-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32%;
+  background-size: 100%;
+  height: 200px;
+  transition: transform .2s;
+  position: relative; }
+  .category-box:hover {
+    transform: scale(1.05); }
+
+.category-name {
+  margin: 0;
+  font-weight: 300; }
+
+.btn-shop-now {
+  position: absolute;
+  bottom: 25px;
+  font-size: 11px; }
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
 
 .home-ingredient {
   margin: 20px auto;

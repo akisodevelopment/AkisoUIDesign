@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/slider/jquery.bxslider.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"/> 
+    <link rel="stylesheet" href="css/product.css"/> 
     <!-- bxSlider CSS file -->
 </head>
 <body>
@@ -83,19 +84,19 @@
                     <div class="submenu-wrapper">
                         <div class="submenu submenu-popular">
                             <div class="submenu-item pr-2">
-                                <a href="/product.html"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/><a>
+                                <a href="#"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/><a>
                                 <label>MATTE SHIMMER LIPSTICK</label>
                             </div>
                             <div class="submenu-item pr-2">
-                                <a href="/product.html"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/><a>
+                                <a href="#"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/><a>
                                 <label>CREAMY MATTE LIQUD LIPSTICK</label>
                             </div>
                             <div class="submenu-item pr-2">
-                                <a href="/product.html"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/></a>
+                                <a href="#"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/></a>
                                 <label>INTENSE HI BLEND EYE SHADOW STICK</label>
                             </div>
                             <div class="submenu-item pr-2">
-                                <a href="/product.html"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/></a>
+                                <a href="#"><img src="https://via.placeholder.com/150x150" alt="menu-banner"/></a>
                                 <label>HI DEF SHOOTHING KAJAL</label>
                             </div>
                         </div>
@@ -140,138 +141,95 @@
         </nav>
     </header>
     <section class="body-content">
-        <div class="row no-gutters home-slider">
-            <div class="col">
-                    <ul class="bxslider">
-                        <li>
-                            <img src="https://via.placeholder.com/1500x500?text=slide1" />
-                            <div class="shop-now">
-                                <a href="#shopnow" class="btn btn-dark btn-shop-now">SHOP</a>
-                            </div>
-                        </li>
-                        <li><img src="https://via.placeholder.com/1500x500?text=slide2" /></li>
-                        <li><img src="https://via.placeholder.com/1500x500?text=slide3" /></li>
-                        <li><img src="https://via.placeholder.com/1500x500?text=slide4" /></li>
-                        <li><img src="https://via.placeholder.com/1500x500?text=slide5" /></li>
+        <div class="container-fluid p-5">
+            <div class="product">
+                <div class="w-50 product-images">
+                    <div class="product-alternate-thumb">
+                        <img class="product-thumb-image" src="https://via.placeholder.com/200x200" alt="produc-image"/>
+                        <img class="product-thumb-image" src="https://via.placeholder.com/200x200" alt="produc-image"/>
+                        <img class="product-thumb-image" src="https://via.placeholder.com/200x200" alt="produc-image"/>
+                        <img class="product-thumb-image" src="https://via.placeholder.com/200x200" alt="produc-image"/>
+                    </div>
+                    <div class="product-main">
+                        <img class="product-main-image" src="https://via.placeholder.com/500x500" alt="produc-image"/>
+                    </div>
+                </div>
+                <div class="w-50 product-right">
+                    <h1 class="product-name">Product Name</h1>
+                    <p class="product-description">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                        The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    <div class="product-shades mt-2">
+                        <h2>SELECTED SHADE</h2>
+                        <label>Ruby Brick with cool undertones</label>
+                        <div class="product-shades-list mt-2">
+                            <ul>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                                <li><a href="#">Shade</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-quantity my-3">
+                        <label>Quantity</label>
+                        <input type="number" name="product-qty" class="product-qty" />
+                    </div>
+                    <button class="btn btn-dark">Add To Cart | &#8377;999.00</button>
+                </div>
+            </div>
+            <div class="d-flex product-more-details my-5">
+                <div class="w-50 d-flex flex-column align-items-center justify-content-center">
+                    <h2>Key Ingredients & Benefits</h2>
+                    <hr>
+                    <p>
+                        We source ingredients for two reasons: extreme nourishment and supreme luxury. 
+                        We choose only the ones that deliver both.
+                    </p>
+                    <p class="d-flex text-small">All products are gluten, egg, and crutely-free</p>
+                </div>
+                <div class="w-50">
+                    <ul>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
                     </ul>
-            </div>
-        </div>
-        <div class="home-container">
-            <div class="home-banner">
-                <div class="mr-auto">
-                    <h1 class="quote-title">BEAUTY QUOTE</h1>
-                    <span class="quote-subtitle">Brand Philosopy / USB</span>
-                </div>
-                <button class="btn btn-dark btn-aboutus">ABOUT US</button>
-            </div>
-            <div class="home-categories">
-                <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                    <h4 class="category-name">LIP CATEGORY</h4>
-                    <button class="btn btn-dark btn-shop-now">SHOP</button>
-                </div>
-                <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                    <h4 class="category-name">LIP CATEGORY</h4>
-                    <button class="btn btn-dark btn-shop-now">SHOP</button>
-                </div>
-                <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                    <h4 class="category-name">LIP CATEGORY</h4>
-                    <button class="btn btn-dark btn-shop-now">SHOP</button>
                 </div>
             </div>
-            <div class="home-ingredient">
-                <h2 class="section-title">INGREDIENT</h1>
-                <div class="ingredient-items">
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <span>Ingredient</span>
+            <div class="w-100 explore-similar">
+                    <h2 class="section-title">Explore Similar</h2>
+                    <div class="highligt-product-slider">
+                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box">
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
                     </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                    <div class="ingredient-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <span>Ingredient</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-            </div>
-            <div class="home-higlight-product">
-                <h2 class="section-title">Highlight Products</h2>
-                <div class="highligt-product-slider">
-                    <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                    <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                    <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                    <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                    <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                    <div class="category-box">
-                        <h4 class="category-name">LIP CATEGORY</h4>
-                        <button class="btn btn-dark btn-shop-now">SHOP</button>
-                    </div>
-                </div>
-            </div>
-            <div class="home-testimoninal">
-                <div class="testimoninal-slider">
-                    <div class="testimonial-item">
-                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
-                        The passage is attributed to an unknown typesetter in the 15th century 
-                        who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-                        <h3>- MEDIA HOUSE LOGO</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
-                        The passage is attributed to an unknown typesetter in the 15th century 
-                        who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-                        <h3>- MEDIA HOUSE LOGO</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
-                        The passage is attributed to an unknown typesetter in the 15th century 
-                        who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
-                        <h3>- MEDIA HOUSE LOGO</h3>
-                    </div>
-                </div>    
             </div>
         </div>
     </section>
@@ -337,15 +295,6 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                mode: 'horizontal',
-                infiniteLoop: true,
-                touchEnabled: false
-            });
-
-            $(window).resize(function () {
-                equalizeCircleHeightAndWidth();
-            });
 
             $('.highligt-product-slider').bxSlider({
                 mode: 'horizontal',
@@ -354,25 +303,12 @@
                 pager: false,
                 moveSlides: 1,
                 minSlides: 4,
-                slideWidth: $('.home-higlight-product').width()/4,
+                slideWidth: $('.explore-similar').width()/4,
                 maxSlides: 4,
                 slideMargin: 20
             });
 
-            $('.testimoninal-slider').bxSlider({
-                mode: 'horizontal',
-                infiniteLoop: true,
-                touchEnabled: false,
-                pager: false,
-                slideMargin:10,
-            })
         });
-        equalizeCircleHeightAndWidth();
-        function equalizeCircleHeightAndWidth() {
-            var $ingredientBox = $(".ingredient-box")
-            var width = $ingredientBox.width();
-            $ingredientBox.height(width);
-        }
 
     </script>
 </body> 
