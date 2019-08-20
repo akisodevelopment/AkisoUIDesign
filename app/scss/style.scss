@@ -1,6 +1,5 @@
 @import './includes/variables.scss';
 @import './includes/button.scss';
-@import './includes/device.scss';
 
 ul {
     margin: 0;
@@ -16,6 +15,7 @@ header {
 
     .navbar {
         background-color: $black;
+        padding: 0 16px;
 
         .logo-link {
             color: $white;
@@ -26,6 +26,7 @@ header {
         .nav-link {
             color: $white;
             text-transform: uppercase;
+            padding: 0;
         }
     }
     .menu-right {
@@ -39,15 +40,8 @@ header {
             }
         }
     }
-
-    .logo {
-        justify-content: flex-start
-    }
-    .main-menu {
-        justify-content: center;
-    }
-    .menu-right {
-        justify-content: flex-end;
+    .nav-item {
+        padding: 16px 15px;
     }
 }
 
@@ -284,21 +278,29 @@ footer {
     .submenu-wrapper {
         position: absolute;
         left: 0;
+        top: 56px;
         width: 100%;
         background-color: $white;
         display: none;
         overflow: auto;
+        border-bottom: 1px solid $gray;
     }
     .submenu {
-        display: flex;
+        float: left;
+        min-width: 980px;
         height: 200px;
         margin: 20px;
-        font-size: 11px;
-        justify-content: space-evenly;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
 
         .submenu-item {
+            float: left;
+            padding-right: 10px;
             display: flex;
             flex-direction: column;
+            margin: 0 20px;
+
 
             .submenu-item-ul {
                 height: 180px;
@@ -306,17 +308,47 @@ footer {
                 flex-direction: column;
                 flex-wrap: wrap;
             }
+
             .submenu-item-link {
                 a {
                     text-transform: capitalize;
                     color: $light-gray;
+                    text-decoration: none;
+                }
+            }
+
+            &.submenu-item-wrap {
+                width: 200px;
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+
+        &.submenu-popular {
+            .submenu-item {
+                width: 150px;
+                text-align: center;
+                justify-content: center;
+                
+                label {
+                    margin-top: 10px;
                 }
             }
         }
     }
     .nav-item:hover {
+        .nav-link {
+            border-bottom: 2px solid $white;
+        }
+
         .submenu-wrapper {
-            display: block;
+            display: flex;
+            justify-content: center;
         }
     }
 }
+
+@import './includes/device.scss';

@@ -4,7 +4,13 @@
         background-position: left top, right center;
         background-size: 30%;
     }
-    .submenu-item-wrap {
-        flex-grow: 2;
+
+    .main-menu {    
+        .nav-item:hover {
+            .submenu-wrapper {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
     }
 }
