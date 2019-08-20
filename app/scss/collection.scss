@@ -25,6 +25,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                position: relative;
 
                 .circle-box {
                     width: 200px;
@@ -33,6 +34,17 @@
                     border-radius: 50%;
                     position: absolute;
                     left: 10%;
+                }
+
+                .wishlist {
+                    width: 20px;
+                    position: absolute;
+                    right: 0.625rem;
+                    bottom: 0.625rem;
+
+                    img {
+                        width: 20px;
+                    }
                 }
             }
 
@@ -65,4 +77,54 @@
 
     }
 
+}
+
+.filter-box {
+    margin: 03rem 5rem;
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+
+        .filter {
+            flex: 1;
+            background: #ddd;
+            margin: 0.625rem;
+            padding: 5px;
+            height: 35px;
+            margin-top: 10px;
+            text-align: center;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            span {
+                &.close {
+                    font-size: 1rem;
+                    margin: 3px;
+                }
+            }
+
+            .filter-img {
+                width: 20px;
+            }
+        }
+
+        div#filter-btn {
+            background: none;
+            border: none;
+            text-align: right;
+        }
+    }
 }

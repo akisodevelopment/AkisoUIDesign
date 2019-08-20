@@ -26,7 +26,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        position: relative; }
         .collection-container .collection-categories .category-box .category-body .circle-box {
           width: 200px;
           height: 200px;
@@ -34,6 +35,13 @@
           border-radius: 50%;
           position: absolute;
           left: 10%; }
+        .collection-container .collection-categories .category-box .category-body .wishlist {
+          width: 20px;
+          position: absolute;
+          right: 0.625rem;
+          bottom: 0.625rem; }
+          .collection-container .collection-categories .category-box .category-body .wishlist img {
+            width: 20px; }
       .collection-container .collection-categories .category-box .category-footer {
         height: 50px;
         width: 100%; }
@@ -50,3 +58,36 @@
       margin: 10px 0;
       right: 0;
       font-size: 11px; }
+
+.filter-box {
+  margin: 03rem 5rem; }
+  .filter-box .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap; }
+    .filter-box .filters .filter {
+      flex: 1;
+      background: #ddd;
+      margin: 0.625rem;
+      padding: 5px;
+      height: 35px;
+      margin-top: 10px;
+      text-align: center; }
+      .filter-box .filters .filter:first-child {
+        margin-left: 0; }
+      .filter-box .filters .filter:last-child {
+        margin-right: 0; }
+      .filter-box .filters .filter span.close {
+        font-size: 1rem;
+        margin: 3px; }
+      .filter-box .filters .filter .filter-img {
+        width: 20px; }
+    .filter-box .filters div#filter-btn {
+      background: none;
+      border: none;
+      text-align: right; }
