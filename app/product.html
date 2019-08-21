@@ -110,7 +110,7 @@
                         <path class="heroicon-ui" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="javascript:void(0)" class="shopping-bag">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <style>
@@ -180,34 +180,59 @@
                     </div>
                     <div class="product-quantity my-3">
                         <label>Quantity</label>
-                        <button class="qty-minus">-</button>
+                        <span class="qty-minus">-</span>
                         <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1"/>
-                        <button class="qty-plus">+</button>
+                        <span class="qty-plus">+</span>
                     </div>
-                    <button class="btn btn-dark">Add To Cart | &#8377;999.00</button>
+                    <button class="btn btn-dark addToCart">Add To Cart | &#8377;999.00</button>
                 </div>
             </div>
             <div class="d-flex product-more-details my-5">
                 <div class="w-50 d-flex flex-column align-items-center justify-content-center">
                     <h2>Key Ingredients & Benefits</h2>
-                    <hr>
-                    <p>
+                    <span class="head-seperator"></span>
+                    <p class="text-center">
                         We source ingredients for two reasons: extreme nourishment and supreme luxury. 
                         We choose only the ones that deliver both.
                     </p>
-                    <p class="d-flex text-small">All products are gluten, egg, and crutely-free</p>
+                    <p class="text-center" style="font-size: 10px;">All products are gluten, egg, and crutely-free</p>
                 </div>
-                <div class="w-50">
-                    <ul>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
-                        <li><span class="pr-5">Mango Seed Butter</span><span>Omega rich and skin soothing</span></li>
+                <div class="w-50 ingredients-list">
+                    <ul class="mb-3">
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Mango Seed Butter</span>
+                            <span class="inc-desc">Omega-rich and skin soothing</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Shea Butter</span>
+                            <span class="inc-desc">Deeply hydrating collagen support</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Cocoa Seed Butter</span>
+                            <span class="inc-desc">Improve skin's natural healing ability</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Green Tea Seed Oil</span>
+                            <span class="inc-desc">Anti-aging free radical defense and repair</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Rosehip Seed Oil</span>
+                            <span class="inc-desc">Added antioxidants for enhanced tone and texture</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Jojoba Oil</span>
+                            <span class="inc-desc">Vitamin-packed moisturizer</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Sweet Orange Oil</span>
+                            <span class="inc-desc">Uplifting, mood boosting scent</span>
+                        </li>
+                        <li>
+                            <span class="inc-name"><img src="images/mango-seed.png"/>Crutely-Free</span>
+                            <span class="inc-desc">Kosas is free of Parabens, Phthalates, Mineral Oil, Glycol, Phenoxyethanol, Synthetic Fragrance</span>
+                        </li>
                     </ul>
+                    <a class="#">Show full ingredients list</a>
                 </div>
             </div>
             <div class="w-100 color-theory">
@@ -317,6 +342,54 @@
                 </div>
             </div>
     </footer>
+    <aside class="mini-cart">
+        <div class="mini-cart-wrapper">
+            <h2 class="text-center">CART <a href="javascript:void(0)" class="mini-cart-close"><img src="images/right-arrow.png"></a></h2>
+            <progress class="progress-bar" value="90" max="100"></progress>
+            <label>50 Rs Away from free shipping</label>
+            <div class="mini-cart-content">
+                <div class="cart-items">
+                    <div class="cart-line-item">
+                        <div class="product-box">
+                            <img src="https://via.placeholder.com/100x100"/>
+                            <p>Product</p>
+                        </div>
+                        <select class="product-shades">
+                            <option>ROSE</option>
+                        </select>
+                        <div class="product-quantity my-3">
+                            <span class="qty-minus">-</span>
+                            <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1"/>
+                            <span class="qty-plus">+</span>
+                        </div>
+                        <a href="javascript:void(0)" class="remove-item"><img src="images/delete-icon.png"/></a>
+                        <label class="m-0">&#8377;500</label>
+                    </div>
+                </div>
+                <div class="cart-cross-sell">
+                    <div class="d-flex product-box-crosssell">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80"/>
+                            <label>Product</label>
+                        </div>
+                        <label class="m-0">&#8377;500</label>
+                        <button class="btn btn-dark btn-addtocart">Add To cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-promo-code">
+                <input type="text" placeholder="PROMOCODE" name="promocode" class="form-control promocode-input"/>
+                <button class="btn btn-light btn-promocode-apply">APPLY</button>
+            </div>
+            <div>
+                <label>TOTAL</label>
+                <label>&#8377;2500</label>
+            </div>
+            <div class="checkout-button">
+                <button class="btn btn-dark btn-checkout">Check Out</button>
+            </div>
+        </div>
+    </aside>
     <!-- jQuery library -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <!-- bxSlider Javascript file -->
@@ -366,6 +439,13 @@
                 }
             });
 
+            $('.addToCart, .shopping-bag').click(function(){
+                $('.mini-cart').addClass('show');
+            })
+            $('.mini-cart-close').click(function(){
+                $('.mini-cart').removeClass('show');
+            })
+            
         });
 
     </script>

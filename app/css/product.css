@@ -8,6 +8,10 @@
     color: #000;
     border-color: #8e8b8b; }
 
+.btn-light {
+  background-color: #8e8b8b;
+  color: #fff; }
+
 .product {
   display: flex; }
   .product .product-images {
@@ -55,6 +59,31 @@
     .product .product-shades-list ul li:last-child {
       margin-right: 0; }
 
+.product-more-details h2 {
+  font-size: 20px;
+  font-weight: 700; }
+
+.product-more-details .head-seperator {
+  width: 100px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px; }
+
+.product-more-details .ingredients-list li {
+  display: flex;
+  align-items: center; }
+
+.product-more-details .ingredients-list img {
+  width: 50px;
+  margin-right: 10px; }
+
+.product-more-details .ingredients-list .inc-name {
+  flex: 0 0 50%;
+  font-weight: bold; }
+
+.product-more-details .ingredients-list .inc-desc {
+  font-size: 12px;
+  color: #8e8b8b; }
+
 .direction-of-use .direction-video {
   width: 100%;
   height: 400px; }
@@ -66,8 +95,3 @@
   height: 200px; }
   .color-theory .color-box p {
     margin-left: 100px; }
-
-.product-quantity .product-qty {
-  width: 50px;
-  border: 0;
-  border-bottom: 1px solid #ccc; }

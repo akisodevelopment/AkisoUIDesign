@@ -8,6 +8,10 @@
     color: #000;
     border-color: #8e8b8b; }
 
+.btn-light {
+  background-color: #8e8b8b;
+  color: #fff; }
+
 .collection-container {
   margin: 03rem 5rem; }
   .collection-container .collection-categories {
