@@ -109,6 +109,10 @@ footer {
     margin-bottom: 10px;
     box-shadow: none;
 
+    img {
+        width: 100%;
+    }
+
     .bx-pager {
         bottom: 40px;
 
@@ -151,6 +155,11 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
+        flex-wrap: wrap;
+
+        .category-box {
+            margin: 10px;
+        }
     }
 }
 
@@ -159,28 +168,28 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 32%;
     //background-color: $gray;
-    background-size: 100%;
-    height: 200px;
     transition: transform .2s;
     position: relative;
+
+    img {
+        width: 100%;
+    }
 
     &:hover {
         transform: scale(1.05);
     }
-}
 
+    .category-name {
+        margin: 0;
+        font-weight: 300;
+        position: absolute;
+    }
 
-.category-name {
-    margin: 0;
-    font-weight: 300;
-}
-
-.btn-shop-now {
-    position: absolute;
-    bottom: 25px;
-    font-size: 11px;   
+    .btn-shop-now {
+        position: absolute;
+        bottom: 10%;
+    }
 }
 
 .section-title{

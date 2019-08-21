@@ -10,7 +10,7 @@
         padding: 10px 20px 10px 10px;
 
         .product-alternate-thumb {
-            width: 17%;
+            width: 15%;
 
             img {
                 width: 100%;
@@ -23,7 +23,7 @@
         }
 
         .product-main {
-            width: 80%;
+            width: 85%;
             padding: 0 20px;
 
             img {
@@ -53,8 +53,8 @@
 
             li {
                 a {
-                    width: 50px;
-                    height: 50px;
+                    width: 80px;
+                    height: 80px;
                     margin: 10px;
                     border-radius: 50%;
                     background-color: $gray;
@@ -75,5 +75,32 @@
                 }
             }
         }
+    }
+}
+.direction-of-use {
+    .direction-video {
+         width: 100%;
+         height: 400px;
+    }
+}
+
+.color-theory {
+    .color-box {
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        height: 200px;
+
+        p {
+            margin-left: 100px;
+        }
+    }
+}
+
+.product-quantity {
+    .product-qty {
+        width: 50px;
+        border: 0;
+        border-bottom: 1px solid #ccc;
     }
 }

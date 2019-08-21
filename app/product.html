@@ -16,7 +16,7 @@
         <nav class="navbar justify-content-between">
             <!-- Navbar content -->
             <div class="logo">
-                    <a href="#" class="logo-link">
+                    <a href="/" class="logo-link">
                             Logo
                     </a>
             </div>
@@ -180,7 +180,9 @@
                     </div>
                     <div class="product-quantity my-3">
                         <label>Quantity</label>
-                        <input type="number" name="product-qty" class="product-qty" />
+                        <button class="qty-minus">-</button>
+                        <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1"/>
+                        <button class="qty-plus">+</button>
                     </div>
                     <button class="btn btn-dark">Add To Cart | &#8377;999.00</button>
                 </div>
@@ -208,25 +210,51 @@
                     </ul>
                 </div>
             </div>
-            <div class="w-100 explore-similar">
+            <div class="w-100 color-theory">
+                <div class="color-box mb-4" style="background-image: url('https://via.placeholder.com/200x200');background-position: left;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </div>
+                <div class="color-box" style="background-image: url('https://via.placeholder.com/200x200');background-position: right;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </div>
+            </div>
+            <div class="w-100 direction-of-use mt-5">
+                <h2 class="section-title">Explore Similar</h2>
+                <iframe class="direction-video"
+                    src="https://www.youtube.com/embed/5Peo-ivmupE"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="w-100 explore-similar mt-5">
                     <h2 class="section-title">Explore Similar</h2>
                     <div class="highligt-product-slider">
-                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <button class="btn btn-dark btn-shop-now">SHOP</button>
-                        </div>
-                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <button class="btn btn-dark btn-shop-now">SHOP</button>
-                        </div>
-                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <button class="btn btn-dark btn-shop-now">SHOP</button>
-                        </div>
-                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
-                            <button class="btn btn-dark btn-shop-now">SHOP</button>
-                        </div>
-                        <div class="category-box" style="background-image: url('https://via.placeholder.com/400x400')">
+                        <div class="category-box">
+                             <img src="https://via.placeholder.com/400x400"/>
                             <button class="btn btn-dark btn-shop-now">SHOP</button>
                         </div>
                         <div class="category-box">
+                            <img src="https://via.placeholder.com/400x400"/>
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box">
+                             <img src="https://via.placeholder.com/400x400"/>
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box">
+                            <img src="https://via.placeholder.com/400x400"/>
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box">
+                             <img src="https://via.placeholder.com/400x400"/>
+                            <button class="btn btn-dark btn-shop-now">SHOP</button>
+                        </div>
+                        <div class="category-box">
+                            <img src="https://via.placeholder.com/400x400"/>
                             <button class="btn btn-dark btn-shop-now">SHOP</button>
                         </div>
                     </div>
@@ -306,6 +334,36 @@
                 slideWidth: $('.explore-similar').width()/4,
                 maxSlides: 4,
                 slideMargin: 20
+            });
+
+
+            $('.product-qty').on('input', function(){
+                var value = $(this).val();
+                value = value.replace(/[^0-9]/g,'');
+                $(this).val(value);
+            });
+
+            $('.product-qty').on('blur', function(){
+                var value = $(this).val();
+                value = value.replace(/[^0-9]/g,'');
+                if (!parseInt(value) || parseInt(value)===0) {
+                    $(this).val(1);
+                } else {
+                    $(this).val(value);
+                }
+            });
+
+            $('.qty-plus').click(function () {
+                if ($(this).prev().val() < 9999) {
+                    $(this).prev().val(+$(this).prev().val() + 1);
+                }
+            });
+            $('.qty-minus').click(function () {
+                if ($(this).next().val() > 1) {
+                    if ($(this).next().val() > 1) {
+                        $(this).next().val(+$(this).next().val() - 1);
+                    }
+                }
             });
 
         });

@@ -1,8 +1,13 @@
 @media only screen and (max-width : 768px) {
     /* Styles */
+    .home-container .home-categories {
+        justify-content: center;
+    }
+
     .testimonial-item {
         background-position: left top, right center;
         background-size: 30%;
+        padding: 0;
     }
 
     .main-menu {
