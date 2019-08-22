@@ -366,4 +366,12 @@ footer {
     justify-content: flex-start; }
   .main-menu .nav-item:hover .submenu-wrapper {
     display: flex;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .product-page .product-more-details-left {
+    width: 100%; }
+  .product-page .ingredients-list {
+    width: 100%; }
+  .product-page .product-images {
+    width: 100%; }
+  .product-page .product-right {
+    width: 100%; } }

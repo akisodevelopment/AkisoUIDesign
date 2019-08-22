@@ -3,11 +3,13 @@
 
 .product {
     display: flex;
+    flex-wrap: wrap;
 
 
     .product-images {
         display: flex;
         padding: 10px 20px 10px 10px;
+        width: 50%;
 
         .product-alternate-thumb {
             width: 15%;
@@ -33,6 +35,7 @@
     }
 
     .product-right {
+        width: 50%;
         padding: 10px 10px 10px 20px;
 
         .product-name {
@@ -79,6 +82,9 @@
 }
 
 .product-more-details {
+    display: flex;
+    flex-wrap: wrap;
+
     h2 {
         font-size: 20px;
         font-weight: 700;
@@ -89,8 +95,17 @@
         border-bottom: 2px solid $black;
         margin-bottom: 20px;
     }
+    .product-more-details-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .ingredients-list {
+        width: 50%;
+
         li {
             display: flex;
             align-items: center;
@@ -128,5 +143,13 @@
         p {
             margin-left: 100px;
         }
+    }
+}
+
+.ingredients-more-link {
+    color: $black;
+
+    &:hover {
+        color: inherit;
     }
 }
