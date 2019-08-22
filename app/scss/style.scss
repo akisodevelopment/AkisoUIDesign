@@ -13,6 +13,21 @@ header {
     position: fixed;
     z-index: 10000;
     top: 0;
+    
+    .header-left {
+        display: flex;
+        align-items: center;
+
+        .humberger-icon {
+            display: none;
+            margin-right: 10px;
+        }
+
+        #ui-menu {
+            fill: $white;
+            width: 30px;
+        }
+    }
 
     .navbar {
         background-color: $black;
@@ -44,6 +59,78 @@ header {
     .nav-item {
         padding: 16px 15px;
     }
+    .toggle-menu-icon {
+        display: none;
+    }
+}
+
+.mobile-menu-wrapper {
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    left: 0;
+    width: calc(100vw - 100px);
+    left: calc(-1 * calc(100vw - 100px));
+    height: 100vh;
+    background-color: $white;
+    transition: 1s;
+    .mobile-menu-header {
+        padding: 10px;
+        text-align: right;
+    }
+    .close-mobile-menu {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        color: $black;
+    }
+
+    ul.mobile-main-menu {
+        li {
+
+            border-bottom: 1px solid #ccc;
+
+            a {
+                color: $black;
+                padding: 10px 20px;
+            }
+        }
+        .submenu-wrapper {
+            display: none;
+            
+            ul.submenu-item-ul {
+                display: none;
+            }
+
+            .submenu-item {
+                &:nth-child(2) label {
+                    border-top: 1px solid #cccccc;
+                    margin-top: 10px;
+                }
+
+                label {
+                    margin: 0;
+                    width: 100%;
+                    padding: 10px 20px;
+                    border-bottom: 1px solid #cccccc;
+                }
+
+                &:last-child label {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.bacground-overlay {
+    position: fixed;
+    z-index: 99998;
+    background-color: $black;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    display: none;
+    transition: all 0.5s;
 }
 
 .body-content {
@@ -394,17 +481,17 @@ footer {
 .mini-cart {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -460px;
     width: 460px;
     height: 100vh;
     background-color: $white;
     border: $gray;
     z-index: 99999;
-    transition: all 0.5s;
-    display: none;
+    transition: 1s;
 
     &.show {
-        display: block;
+        right: 0;
+        transition: 1s;
     }
     h2 {
         position: relative;
@@ -519,6 +606,8 @@ footer {
         }
     }
 }
+
+
 
 
 @import './includes/device.scss';

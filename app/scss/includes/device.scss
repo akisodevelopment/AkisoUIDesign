@@ -10,17 +10,31 @@
         padding: 0;
     }
 
-    .main-menu {
-        .submenu {
-            display: flex;
-            justify-content: flex-start;
+    header {
+        .navbar {
+            padding: 16px;
         }
 
-        .nav-item:hover {
-            .submenu-wrapper {
-                display: flex;
-                justify-content: flex-start;
-            }
+        .header-left .humberger-icon {
+            display: block;
+        }
+        .desktop-menu {
+            display: none;
+        }
+    }
+
+    .nav-mobile-open{
+        .mobile-menu-wrapper {
+            transition: 1s;
+            left: 0;
+        }
+        
+        .bacground-overlay {
+            display: block;
+        }
+
+        .toggle-menu-icon {
+            display: block;
         }
     }
 
@@ -40,9 +54,15 @@
         .product-right {
             width: 100%;
         }
+
+        .product .product-shades-list ul li a {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .mini-cart {
         width: 100%;
+        right: -100%;
     }
 }

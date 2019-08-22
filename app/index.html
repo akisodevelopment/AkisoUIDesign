@@ -14,14 +14,19 @@
     <header>
         <nav class="navbar justify-content-between">
             <!-- Navbar content -->
-            <div class="logo">
+            <div class="header-left">
+                    <a href="javascript:void(0)" class="humberger-icon">
+                        <svg id="ui-menu" viewBox="0 0 20 16">
+                            <path clip-rule="evenodd" d="M.05.8A.75.75 0 0 1 .8.05h18.4a.75.75 0 0 1 0 1.5H.8A.75.75 0 0 1 .05.8zm0 14.4a.75.75 0 0 1 .75-.75h18.4a.75.75 0 0 1 0 1.5H.8a.75.75 0 0 1-.75-.75zM.8 7.25a.75.75 0 0 0 0 1.5h18.4a.75.75 0 0 0 0-1.5z" fill-rule="evenodd"></path>
+                        </svg>
+                    <a>
                     <a href="/" class="logo-link">
                             Logo
                     </a>
             </div>
-            <ul class="nav main-menu">
+            <ul class="nav main-menu desktop-menu">
                 <li class="nav-item">
-                    <a href="collection.html" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">Shop</a>
                     <div class="submenu-wrapper">
                         <div class="submenu">
                             <div class="submenu-item pr-2">
@@ -109,7 +114,7 @@
                         <path class="heroicon-ui" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="javscript:void(0);" class="shopping-bag">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <style>
@@ -139,6 +144,12 @@
             </div>
         </nav>
     </header>
+    <div class="bacground-overlay"></div>
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-header"><a href="javascript:void(0)" class="close-mobile-menu">X</a></div>
+        <div class="mobile-menu-continer"></div>
+    </div>
+
     <section class="body-content">
         <div class="row no-gutters home-slider">
             <div class="col">
@@ -340,10 +351,79 @@
                 </div>
             </div>
     </footer>
+    <aside class="mini-cart">
+        <div class="mini-cart-wrapper">
+            <h2 class="text-center">CART <a href="javascript:void(0)" class="mini-cart-close"><img src="images/right-arrow.png"></a></h2>
+            <progress class="progress-bar" value="90" max="100"></progress>
+            <label>50 Rs Away from free shipping</label>
+            <div class="mini-cart-content">
+                <div class="cart-items">
+                    <div class="cart-line-item">
+                        <div class="product-box">
+                            <img src="https://via.placeholder.com/100x100"/>
+                            <p>Product</p>
+                        </div>
+                        <select class="product-shades">
+                            <option>ROSE</option>
+                        </select>
+                        <div class="product-quantity my-3">
+                            <span class="qty-minus">-</span>
+                            <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1"/>
+                            <span class="qty-plus">+</span>
+                        </div>
+                        <label class="m-0 product-price pr-2">
+                            <a href="javascript:void(0)" class="remove-item"><img src="images/delete-icon.png"/></a>
+                            <span>&#8377;500</span>
+                        </label>
+                    </div>
+                    <div class="cart-line-item">
+                        <div class="product-box">
+                            <img src="https://via.placeholder.com/100x100"/>
+                            <p>Product</p>
+                        </div>
+                        <select class="product-shades">
+                            <option>ROSE</option>
+                        </select>
+                        <div class="product-quantity my-3">
+                            <span class="qty-minus">-</span>
+                            <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1"/>
+                            <span class="qty-plus">+</span>
+                        </div>
+                        <label class="m-0 product-price pr-2">
+                            <a href="javascript:void(0)" class="remove-item"><img src="images/delete-icon.png"/></a>
+                            <span>&#8377;500</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cart-cross-sell">
+                    <div class="d-flex product-box-crosssell">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80"/>
+                            <label>Product</label>
+                        </div>
+                        <label class="m-0">&#8377;500</label>
+                        <button class="btn btn-dark btn-addtocart">Add To cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-promo-code">
+                <input type="text" placeholder="PROMOCODE" name="promocode" class="form-control promocode-input"/>
+                <button class="btn btn-light btn-promocode-apply">APPLY</button>
+            </div>
+            <div>
+                <label>TOTAL</label>
+                <label>&#8377;2500</label>
+            </div>
+            <div class="checkout-button">
+                <button class="btn btn-dark btn-checkout">Check Out</button>
+            </div>
+        </div>
+    </aside>
     <!-- jQuery library -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
         $(document).ready(function(){
             $('.bxslider').bxSlider({
