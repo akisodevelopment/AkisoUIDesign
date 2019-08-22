@@ -37,13 +37,24 @@
                 }
 
                 .wishlist {
-                    width: 20px;
+                    width: 25px;
                     position: absolute;
                     right: 0.625rem;
                     bottom: 0.625rem;
+                    height: 25px;
+                    line-height: 25px;
 
-                    img {
-                        width: 20px;
+                    &:before {
+                        content: '\2661';
+                        color: #000;
+                        font-size: 1.75rem;
+                        font-weight: lighter;
+                    }
+
+                    &.active:before {
+                        content: '\2665';
+                        color: red;
+                        font-size: 2rem;
                     }
                 }
             }
@@ -58,9 +69,30 @@
                 }
 
                 .collection-shades {
+                    display: inline-block;
                     margin: 10px 0;
                 }
             }
+
+            .shades-box {
+                display: none;
+
+                &.active {
+                    width: 100%;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+
+            span.color-shade {
+                background: #ddd;
+                width: 1.5rem;
+                height: 1.5rem;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 5px;
+            }
+
         }
 
         .collection-name {
@@ -99,22 +131,40 @@
             position: absolute;
             right: 0;
             top: 10px;
-            padding: 1rem;
+            padding-top: 1rem;
             max-width: 400px;
 
             .dropdown-body {
+                padding: .5rem 1.5rem;
+
                 .checkbox {
                     display: block;
                     float: left;
                     width: 50%;
                 }
-                
+
                 .custom-control {
                     display: inline-block;
                 }
 
-                .custom-control-input:checked~.custom-control-label::after {
-                    background-image: none;
+                .filter-by-colors {
+
+                    .custom-control {
+                        min-height: 30px;
+                        padding-left: 30px;
+                    }
+
+                    .custom-control-label {
+                        &:before {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        &:after {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
                 }
             }
         }
@@ -201,5 +251,84 @@
             border: none;
             text-align: right;
         }
+    }
+}
+
+.product-box-popup {
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .modal-dialog {
+        position: fixed;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #3c7dcf;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .modal-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 50px;
+        padding: 10px;
+        background: #6598d9;
+        border: 0;
+    }
+
+    .modal-title {
+        font-weight: 300;
+        font-size: 2em;
+        color: #fff;
+        line-height: 30px;
+    }
+
+    .modal-body {
+        position: absolute;
+        top: 50px;
+        bottom: 60px;
+        width: 100%;
+        font-weight: 300;
+        overflow: auto;
+    }
+
+    .modal-footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        padding: 10px;
+        background: #f1f3f5;
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        background: #f1f3f5;
+        border-left: 1px solid darken(#f1f3f5, 10%);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: darken(#f1f3f5, 20%);
     }
 }
