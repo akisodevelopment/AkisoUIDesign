@@ -18,12 +18,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px; }
-    .collection-container .collection-categories .category-box {
+    .collection-container .collection-categories .collection-box {
       width: 32%;
       position: relative; }
-      .collection-container .collection-categories .category-box.large {
+      .collection-container .collection-categories .collection-box.large {
         width: 66%; }
-      .collection-container .collection-categories .category-box .category-body {
+      .collection-container .collection-categories .collection-box .collection-body {
         height: 300px;
         background-color: #cccccc;
         width: 100%;
@@ -32,29 +32,29 @@
         align-items: center;
         justify-content: center;
         position: relative; }
-        .collection-container .collection-categories .category-box .category-body .circle-box {
+        .collection-container .collection-categories .collection-box .collection-body .circle-box {
           width: 200px;
           height: 200px;
           background: #fff;
           border-radius: 50%;
           position: absolute;
           left: 10%; }
-        .collection-container .collection-categories .category-box .category-body .wishlist {
+        .collection-container .collection-categories .collection-box .collection-body .wishlist {
           width: 20px;
           position: absolute;
           right: 0.625rem;
           bottom: 0.625rem; }
-          .collection-container .collection-categories .category-box .category-body .wishlist img {
+          .collection-container .collection-categories .collection-box .collection-body .wishlist img {
             width: 20px; }
-      .collection-container .collection-categories .category-box .category-footer {
+      .collection-container .collection-categories .collection-box .collection-footer {
         height: 50px;
         width: 100%; }
-        .collection-container .collection-categories .category-box .category-footer .collection-price {
+        .collection-container .collection-categories .collection-box .collection-footer .collection-price {
           margin: 10px 0;
           padding-left: 0; }
-        .collection-container .collection-categories .category-box .category-footer .collection-shades {
+        .collection-container .collection-categories .collection-box .collection-footer .collection-shades {
           margin: 10px 0; }
-    .collection-container .collection-categories .category-name {
+    .collection-container .collection-categories .collection-name {
       margin: 0;
       font-weight: 300; }
     .collection-container .collection-categories .btn-addtocart {
@@ -73,7 +73,56 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap; }
+    -webkit-flex-flow: row wrap;
+    position: relative; }
+    .filter-box .filters div#myDropdown {
+      height: auto;
+      color: #000;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      padding: 1rem;
+      max-width: 400px; }
+      .filter-box .filters div#myDropdown .dropdown-body .checkbox {
+        display: block;
+        float: left;
+        width: 50%; }
+      .filter-box .filters div#myDropdown .dropdown-body .custom-control {
+        display: inline-block; }
+      .filter-box .filters div#myDropdown .dropdown-body .custom-control-input:checked ~ .custom-control-label::after {
+        background-image: none; }
+    .filter-box .filters .filter-img {
+      width: 20px; }
+    .filter-box .filters .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer; }
+    .filter-box .filters .dropbtn:hover,
+    .filter-box .filters .dropbtn:focus {
+      background-color: #3e8e41; }
+    .filter-box .filters .dropdown {
+      position: relative;
+      display: inline-block; }
+    .filter-box .filters .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f6f6f6;
+      min-width: 230px;
+      overflow: auto;
+      border: 1px solid #ddd;
+      z-index: 1; }
+    .filter-box .filters .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; }
+    .filter-box .filters .dropdown a:hover {
+      background-color: #ddd; }
+    .filter-box .filters .show {
+      display: block; }
     .filter-box .filters .filter {
       flex: 1;
       background: #ddd;

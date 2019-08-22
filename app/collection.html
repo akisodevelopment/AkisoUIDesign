@@ -97,76 +97,117 @@
                     <span>Price(low-high)</span>
                     <span class="close">x</span>
                 </div>
-                <div class="btn btn-primary filter" id="filter-btn">
-                    <span><img src="./images/filter.png" alt="filter" class="filter-img"/></span>
+                <div class="btn btn-primary filter" id="filter-btn" onclick="myFunction()">
+                    <!-- Trigger the modal with a button -->
+                    <span>
+                        <img src="./images/filter.png" alt="filter" class="filter-img" />
+                    </span>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="dropdown-header">
+                        <span onclick="myFunction()">
+                            <img src="./images/filter.png" alt="filter" class="filter-img" />
+                        </span>
+                    </div>
+                    <div class="dropdown-body">
+                        <div>
+                            <h4>PRODUCT TYPE</h4>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Bullet Lipstick</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Liquid Lipstick</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Kajal</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Eye Liner Pencil</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Liquid Eyeliner</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Eyeshadow Stick</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Mascara</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Foundation</label>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>COLOUR</h4>
+                            <span class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation2"></label>
+                            </span>
+                            <span class="custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation3"></label>
+                            </span>
+                        </div>
+                        <h4>TEXTURE</h4>
+                        <h4>PERFORMANCE</h4>
+                        <h4>INGREDIENTS</h4>
+                        <h4>SKIN TONE</h4>
+                        <h4>SORT BY</h4>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div id="myFilterModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="collection-container">
             <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
@@ -174,91 +215,98 @@
                 </div>
             </div>
             <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box large">
-                    <div class="category-body">
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-categories">
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="collection-box large">
+                    <div class="collection-body">
                         <div class="circle-box"></div>
-                        <h4 class="category-name">VISUAL + TEXT Pushing Other Products/G4U/Ingredient</h4>
+                        <h4 class="collection-name">VISUAL + TEXT Pushing Other Products/G4U/Ingredient</h4>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
-                        <span class="btn collection-price">Price</span>
-                        <span class="btn collection-shades">Shades</span>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
-                    </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
@@ -266,21 +314,60 @@
                 </div>
             </div>
             <div class="collection-categories">
-                <div class="category-box large">
-                    <div class="category-body">
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <span class="btn collection-shades">Shades</span>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-categories">
+                <div class="collection-box large">
+                    <div class="collection-body">
                         <div class="circle-box"></div>
-                        <h4 class="category-name">VISUAL + TEXT Pushing Other Products/G4U/Ingredient</h4>
+                        <h4 class="collection-name">VISUAL + TEXT Pushing Other Products/G4U/Ingredient</h4>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
@@ -288,34 +375,37 @@
                 </div>
             </div>
             <div class="collection-categories">
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="category-box">
-                    <div class="category-body">
-                        <h4 class="category-name">Product</h4>
-                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list" class="wish-list"/></span>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name">Product</h4>
+                        <span class="wishlist"><img src="./images/like-it.png" alt="wish-list"
+                                class="wish-list" /></span>
                     </div>
-                    <div class="category-footer">
+                    <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
                         <span class="btn collection-shades">Shades</span>
                         <button class="btn btn-dark btn-addtocart">Add to Cart</button>
@@ -381,7 +471,15 @@
         </div>
     </footer>
     <!-- jQuery library -->
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.min.js"></script>
     <script>
@@ -392,6 +490,10 @@
                 touchEnabled: false
             });
         });
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
     </script>
 </body>
 
