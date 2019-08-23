@@ -61,7 +61,8 @@ $(document).ready(function() {
         $('body').removeClass('nav-mobile-open');
     });
 
-    $('.mobile-menu-wrapper').on('click', '.nav-item > a', function () {
-        $(this).next().toggle();
+    $('.mobile-menu-wrapper').on('click', '.nav-item > a, .submenu-item-heading', function () {
+        $(this).find('.toggle-menu-icon').toggleClass('icon-minus');
+        $(this).next().slideToggle();
     });
 });

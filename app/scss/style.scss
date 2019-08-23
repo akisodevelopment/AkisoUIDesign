@@ -59,9 +59,6 @@ header {
     .nav-item {
         padding: 16px 15px;
     }
-    .toggle-menu-icon {
-        display: none;
-    }
 }
 
 .mobile-menu-wrapper {
@@ -69,11 +66,32 @@ header {
     z-index: 99999;
     top:0;
     left: 0;
-    width: calc(100vw - 100px);
-    left: calc(-1 * calc(100vw - 100px));
+    width: 100vw;
+    left: calc(-1 * 100vw);
     height: 100vh;
     background-color: $white;
     transition: 1s;
+    overflow: auto;
+
+    .toggle-menu-icon {
+        display: none;
+        width: 16px;
+        height: 16px;
+        margin-left: auto;
+
+        &:before {
+            background: url('../images/icon-plus.png') no-repeat center center;
+            content: '';
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+
+        &.icon-minus:before {
+            background: url('../images/icon-minus.png') no-repeat center center;
+        }
+    }
+
     .mobile-menu-header {
         padding: 10px;
         text-align: right;
@@ -93,6 +111,10 @@ header {
             a {
                 color: $black;
                 padding: 10px 20px;
+                display: block;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
             }
         }
         .submenu-wrapper {
@@ -103,16 +125,14 @@ header {
             }
 
             .submenu-item {
-                &:nth-child(2) label {
-                    border-top: 1px solid #cccccc;
-                    margin-top: 10px;
-                }
 
                 label {
                     margin: 0;
                     width: 100%;
                     padding: 10px 20px;
                     border-bottom: 1px solid #cccccc;
+                    display: flex;
+                    align-items: center;
                 }
 
                 &:last-child label {
@@ -124,6 +144,8 @@ header {
 }
 .bacground-overlay {
     position: fixed;
+    top:0;
+    left: 0;
     z-index: 99998;
     background-color: $black;
     width: 100vw;
@@ -606,8 +628,6 @@ footer {
         }
     }
 }
-
-
 
 
 @import './includes/device.scss';
