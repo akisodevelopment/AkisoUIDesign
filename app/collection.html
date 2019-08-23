@@ -105,12 +105,13 @@
                 </div>
                 <div id="myDropdown" class="dropdown-content">
                     <div class="dropdown-header">
-                        <span onclick="myFunction()">
+                        <span class="filter-icon" onclick="myFunction()">
                             <img src="./images/filter.png" alt="filter" class="filter-img" />
                         </span>
+                        <span class="right-arrow" onclick="myFunction()"></span>
                     </div>
                     <div class="dropdown-body">
-                        <div class="filter-by-type">
+                        <div class="dropdown-box filter-by-type">
                             <h4>PRODUCT TYPE</h4>
                             <div class="custom-control custom-checkbox mb-3 checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
@@ -145,7 +146,7 @@
                                 <label class="custom-control-label" for="customCheck8">Foundation</label>
                             </div>
                         </div>
-                        <div class="filter-by-colors">
+                        <div class="dropdown-box filter-by-colors">
                             <h4>COLOUR</h4>
                             <span class="custom-control custom-radio">
                                 <input type="radio" class="custom-control-input" id="customControlValidation1"
@@ -208,11 +209,187 @@
                                 <label class="custom-control-label" for="customControlValidation12"></label>
                             </span>
                         </div>
-                        <h4 class="filter-by-texture">TEXTURE</h4>
-                        <h4 class="filter-by-performance">PERFORMANCE</h4>
-                        <h4 class="filter-by-ingredients">INGREDIENTS</h4>
-                        <h4 class="filter-by-skintone">SKIN TONE</h4>
-                        <h4 class="filter-by-sorting">SORT BY</h4>
+                        <div class="dropdown-box filter-by-texture">
+                            <h4>TEXTURE</h4>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckTexture1"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckTexture1">Matte</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckTexture2"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckTexture2">Shimmer</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckTexture3"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckTexture3">Gloss</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckTexture4"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckTexture4">Crème</label>
+                            </div>
+                        </div>
+                        <div class="dropdown-box filter-by-performance">
+                            <h4>PERFORMANCE</h4>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance1"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance1">Soothing</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance2"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance2">Pore
+                                    Minimizing</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance3"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance3">Moisturizing</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance4"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance4">Longwear</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance5"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance5">Strengthening</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance6"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance6">Illuminating</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance7"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance7">Waterproof</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckPerformance8"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckPerformance8">Volumizing</label>
+                            </div>
+                        </div>
+                        <div class="dropdown-box filter-by-ingredients">
+                            <h4>INGREDIENTS</h4>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients1"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients1">Vitamin E</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients2"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients2">Mango Seed Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients3"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients3">Vitamin C</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients4"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients4">Jojoba Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients5"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients5">Argan Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients6"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients6">Calendula Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients7"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients7">Marula Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients8"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients8">Rose Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients9"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients9">Lotus Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients10"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients10">Avocado Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients11"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients11">Apricot Oil</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckIngredients12"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckIngredients12">Almond Oil</label>
+                            </div>
+                        </div>
+                        <div class="dropdown-box filter-by-skintone">
+                            <h4>SKIN TONE</h4>
+                            <span class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlSkintone1"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlSkintone1"></label>
+                            </span>
+                            <span class="custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlSkintone2"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlSkintone2"></label>
+                            </span>
+                            <span class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlSkintone3"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlSkintone3"></label>
+                            </span>
+                            <span class="custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlSkintone4"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlSkintone4"></label>
+                            </span>
+                            <span class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlSkintone5"
+                                    name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlSkintone5"></label>
+                            </span>
+                        </div>
+                        <div class="dropdown-box filter-by-sorting">
+                            <h4>SORT BY</h4>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckSortby1"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckSortby1">Price (Low - High)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckSortby2"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckSortby2">Newest</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckSortby3"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckSortby3">Price (High - Low)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3 checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckSortby4"
+                                    name="example1">
+                                <label class="custom-control-label" for="customCheckSortby4">Bestsellers</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,8 +398,9 @@
             <div class="collection-categories">
                 <div class="collection-box">
                     <div class="collection-body">
+                        <div class="best-match">BEST MATCH</div>
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -243,7 +421,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -264,72 +442,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
-                    </div>
-                    <div class="collection-footer">
-                        <span class="btn collection-price">Price</span>
-                        <div class="collection-shades">
-                            <span class="btn">Shades</span>
-                        </div>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                    <div class="shades-box">
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-categories">
-                <div class="collection-box">
-                    <div class="collection-body">
-                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
-                    </div>
-                    <div class="collection-footer">
-                        <span class="btn collection-price">Price</span>
-                        <div class="collection-shades">
-                            <span class="btn">Shades</span>
-                        </div>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                    <div class="shades-box">
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                    </div>
-                </div>
-                <div class="collection-box">
-                    <div class="collection-body">
-                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
-                    </div>
-                    <div class="collection-footer">
-                        <span class="btn collection-price">Price</span>
-                        <div class="collection-shades">
-                            <span class="btn">Shades</span>
-                        </div>
-                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
-                    </div>
-                    <div class="shades-box">
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                        <span class="color-shade"></span>
-                    </div>
-                </div>
-                <div class="collection-box">
-                    <div class="collection-body">
-                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -351,8 +464,75 @@
             <div class="collection-categories">
                 <div class="collection-box">
                     <div class="collection-body">
+                        <div class="best-match">BEST MATCH</div>
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <div class="collection-shades">
+                            <span class="btn">Shades</span>
+                        </div>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                    <div class="shades-box">
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
+                        <span class="wishlist collection"></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <div class="collection-shades">
+                            <span class="btn">Shades</span>
+                        </div>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                    <div class="shades-box">
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
+                        <span class="wishlist collection"></span>
+                    </div>
+                    <div class="collection-footer">
+                        <span class="btn collection-price">Price</span>
+                        <div class="collection-shades">
+                            <span class="btn">Shades</span>
+                        </div>
+                        <button class="btn btn-dark btn-addtocart">Add to Cart</button>
+                    </div>
+                    <div class="shades-box">
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                        <span class="color-shade"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-categories">
+                <div class="collection-box">
+                    <div class="collection-body">
+                        <div class="best-match">BEST MATCH</div>
+                        <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -384,7 +564,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -405,7 +585,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -425,8 +605,9 @@
                 </div>
                 <div class="collection-box">
                     <div class="collection-body">
+                        <div class="best-match">BEST MATCH</div>
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -449,7 +630,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -470,7 +651,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -491,7 +672,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -513,6 +694,7 @@
             <div class="collection-categories">
                 <div class="collection-box large">
                     <div class="collection-body">
+                        <div class="best-match">BEST MATCH</div>
                         <div class="circle-box"></div>
                         <h4 class="collection-name">VISUAL + TEXT Pushing Other Products/G4U/Ingredient</h4>
                     </div>
@@ -523,7 +705,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -546,7 +728,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -567,7 +749,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -588,7 +770,7 @@
                 <div class="collection-box">
                     <div class="collection-body">
                         <h4 class="collection-name" data-toggle="modal" data-target="#myCollectionModal">Product</h4>
-                        <span class="wishlist"></span>
+                        <span class="wishlist collection"></span>
                     </div>
                     <div class="collection-footer">
                         <span class="btn collection-price">Price</span>
@@ -619,9 +801,90 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div class="product-tabs">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                        href="#nav-home" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">Home</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                        href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                        aria-selected="false">Profile</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="row no-gutters collection-slider">
+                                        <div class="col">
+                                            <ul class="collectionBxslider">
+                                                <li>
+                                                    <img src="https://via.placeholder.com/1500x500?text=slide1" />
+                                                    <div class="shop-now">
+                                                        <a href="#shopnow" class="btn btn-dark btn-addtocart">SHOP</a>
+                                                    </div>
+                                                </li>
+                                                <li><img src="https://via.placeholder.com/1500x500?text=slide2" /></li>
+                                                <li><img src="https://via.placeholder.com/1500x500?text=slide3" /></li>
+                                                <li><img src="https://via.placeholder.com/1500x500?text=slide4" /></li>
+                                                <li><img src="https://via.placeholder.com/1500x500?text=slide5" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-header">
+                                        <h3 class="product-name">PRODUCT NAME</h3>
+                                        <h3>PRICE<span class="wishlist product"></span></h3>
+                                    </div>
+                                    <div class="product-body">
+                                        <div class="product-desc"> Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                            <p>elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                tation ul Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul.
+                                                <a class="read-more-btn" data-toggle="collapse" href="#collapseExample"
+                                                    role="button" aria-expanded="false"
+                                                    aria-controls="collapseExample">Read more</a>
+                                            </p>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body"> Anim pariatur cliche reprehenderit, enim
+                                                    eiusmod high life accusamus terry richardson ad squid. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. </div>
+                                            </div>
+                                            <div class="bestmatches-box">
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                                <span class="rounded-circle best-match-indicators">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">...</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -701,6 +964,14 @@
                 mode: 'horizontal',
                 infiniteLoop: true,
                 touchEnabled: false
+            });
+            $('#myCollectionModal').on('shown.bs.modal', function () {
+                // will only come inside after the modal is shown
+                $('.collectionBxslider').bxSlider({
+                    mode: 'horizontal',
+                    infiniteLoop: true,
+                    touchEnabled: false
+                });
             });
             $('body').on('click', '.wishlist', function () {
                 $(this).toggleClass("active");
