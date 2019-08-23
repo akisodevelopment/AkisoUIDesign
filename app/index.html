@@ -303,8 +303,8 @@
                         <input type="submit" class="btn btn-outline-dark btn-submit" name="submitSubscribe" value="SUBMIT"/>
                     </form>
             </div>
-            <div class="row no-gutters">
-                <div class="col-sm">
+            <div class="footer-nav">
+                <div class="footer-nav-item">
                     <h3>Shop</h3>
                     <ul>
                         <li><a href="#">Eyes</a></li>
@@ -312,14 +312,14 @@
                         <li><a href="#">Face</a></li>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="footer-nav-item">
                     <h3>About</h3>
                     <ul>
                         <li><a href="#">Media</a></li>
                         <li><a href="#">Brand</a></li>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="footer-nav-item">
                     <h3>Support</h3>
                     <ul>
                         <li><a href="#">Shipping & Features</a></li>
@@ -327,7 +327,7 @@
                         <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="footer-nav-item">
                     <h3>CAREERS</h3>
                     <ul>
                         <li><a href="#">Shipping & Features</a></li>
@@ -335,7 +335,7 @@
                         <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
-                <div class="col-sm">
+                <div class="footer-nav-item">
                     <h3>Contact</h3>
                     <ul>
                         <li><a href="#">Shipping & Features</a></li>
@@ -343,7 +343,7 @@
                         <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3 social-links">
+                <div class="footer-nav-item social-links">
                     Follow us
                     <a href="#" title="Facebook"><img alt="Facebook" src="./images/facebook.png"/></a>
                     <a href="#" title="Instagram"><img alt="Instagram" src="./images/instagram.png"/></a>
@@ -434,18 +434,6 @@
 
             $(window).resize(function () {
                 equalizeCircleHeightAndWidth();
-            });
-
-            $('.highligt-product-slider').bxSlider({
-                mode: 'horizontal',
-                infiniteLoop: true,
-                touchEnabled: false,
-                pager: false,
-                moveSlides: 1,
-                minSlides: 4,
-                slideWidth: $('.home-higlight-product').width()/4,
-                maxSlides: 4,
-                slideMargin: 20
             });
 
             $('.testimoninal-slider').bxSlider({

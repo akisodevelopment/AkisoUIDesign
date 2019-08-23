@@ -185,6 +185,17 @@ footer {
             }
         }
     }
+
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footer-nav-item {
+            width: calc(calc(100vh - 48px) / 6);
+            margin: 10px 0;
+        }
+    }
 }
 .social-links {
     img {
@@ -287,7 +298,7 @@ footer {
     }
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 
     .category-name {

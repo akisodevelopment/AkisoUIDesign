@@ -153,6 +153,13 @@ footer {
       footer ul li a:hover {
         color: #8e8b8b;
         text-decoration: none; }
+  footer .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .footer-nav .footer-nav-item {
+      width: calc(calc(100vh - 48px) / 6);
+      margin: 10px 0; }
 
 .social-links img {
   width: 16px; }
@@ -224,7 +231,7 @@ footer {
   .category-box img {
     width: 100%; }
   .category-box:hover {
-    transform: scale(1.05); }
+    transform: scale(1.02); }
   .category-box .category-name {
     margin: 0;
     font-weight: 300;
