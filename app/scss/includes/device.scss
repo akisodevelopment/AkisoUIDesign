@@ -1,4 +1,5 @@
 @media only screen and (max-width : 768px) {
+
     /* Styles */
     .home-container .home-categories {
         justify-content: center;
@@ -18,17 +19,18 @@
         .header-left .humberger-icon {
             display: block;
         }
+
         .desktop-menu {
             display: none;
         }
     }
 
-    .nav-mobile-open{
+    .nav-mobile-open {
         .mobile-menu-wrapper {
             transition: 1s;
             left: 0;
         }
-        
+
         .bacground-overlay {
             display: block;
         }

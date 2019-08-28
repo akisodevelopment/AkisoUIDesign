@@ -18,46 +18,152 @@
     <header>
         <nav class="navbar justify-content-between">
             <!-- Navbar content -->
-            <div class="logo">
-                <a href="/" class="logo-link"> Logo </a>
+            <div class="header-left">
+                <a href="javascript:void(0)" class="humberger-icon">
+                    <svg id="ui-menu" viewBox="0 0 20 16">
+                        <path clip-rule="evenodd"
+                            d="M.05.8A.75.75 0 0 1 .8.05h18.4a.75.75 0 0 1 0 1.5H.8A.75.75 0 0 1 .05.8zm0 14.4a.75.75 0 0 1 .75-.75h18.4a.75.75 0 0 1 0 1.5H.8a.75.75 0 0 1-.75-.75zM.8 7.25a.75.75 0 0 0 0 1.5h18.4a.75.75 0 0 0 0-1.5z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    <a>
+                        <a href="/" class="logo-link"> Logo </a>
             </div>
-            <ul class="nav main-menu">
-                <li class="nav-item active"><a href="#Home" class="nav-link">Shop</a></li>
-                <li class="nav-item"><a href="#Home" class="nav-link">Popular</a></li>
+            <ul class="nav main-menu desktop-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Shop <span class="toggle-menu-icon">&nbsp;</span></a>
+                    <div class="submenu-wrapper">
+                        <div class="submenu">
+                            <div class="submenu-item pr-2">
+                                <a href="#"><img src="https://via.placeholder.com/200x200" alt="menu-banner" /></a>
+                            </div>
+                            <div class="submenu-item">
+                                <label class="submenu-item-heading">BY CATEGORY <span
+                                        class="toggle-menu-icon">&nbsp;</span></label>
+                                <ul class="submenu-item-ul">
+                                    <li class="submenu-item-link"><a href="#">EYES</a></li>
+                                    <li class="submenu-item-link"><a href="#">LIPS</a></li>
+                                    <li class="submenu-item-link"><a href="#">FACE</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-item">
+                                <label class="submenu-item-heading">BY BENEFIT<span
+                                        class="toggle-menu-icon">&nbsp;</span></label>
+                                <ul class="submenu-item-ul">
+                                    <li class="submenu-item-link"><a href="#">SHOOTHING</a></li>
+                                    <li class="submenu-item-link"><a href="#">HYDERATING</a></li>
+                                    <li class="submenu-item-link"><a href="#">STRENGTHENING</a></li>
+                                    <li class="submenu-item-link"><a href="#">LENGTHENING</a></li>
+                                    <li class="submenu-item-link"><a href="#">VOLUMIZING</a></li>
+                                    <li class="submenu-item-link"><a href="#">PORE MINIMIZING</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-item submenu-item-wrap">
+                                <label class="submenu-item-heading">BY INGREDIENT<span
+                                        class="toggle-menu-icon">&nbsp;</span></label>
+                                <ul class="submenu-item-ul">
+                                    <li class="submenu-item-link"><a href="#">VITAMIN E</a></li>
+                                    <li class="submenu-item-link"><a href="#">VITAMIN C</a></li>
+                                    <li class="submenu-item-link"><a href="#">ARGAN OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">MARULA OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">LOTUS OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">APRICOT OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">MANGO SEED OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">JOJOBA OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">CALENDULA OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">MARULA OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">ROSE OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">AVOCADO OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">ALMOND OIL</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-item">
+                                <label class="submenu-item-heading">BY TYPE<span
+                                        class="toggle-menu-icon">&nbsp;</span></label>
+                                <ul class="submenu-item-ul">
+                                    <li class="submenu-item-link"><a href="#">VITAMIN E</a></li>
+                                    <li class="submenu-item-link"><a href="#">VITAMIN C</a></li>
+                                    <li class="submenu-item-link"><a href="#">ARGAN OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">MARULA OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">LOTUS OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">APRICOT OIL</a></li>
+                                    <li class="submenu-item-link"><a href="#">MANGO SEED OIL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#Home" class="nav-link">Popular <span
+                            class="toggle-menu-icon">&nbsp;</span></a>
+                    <div class="submenu-wrapper">
+                        <div class="submenu submenu-popular">
+                            <div class="submenu-item">
+                                <a href="/product.html"><img src="https://via.placeholder.com/150x150"
+                                        alt="menu-banner" /></a>
+                                <label>MATTE SHIMMER LIPSTICK</label>
+                            </div>
+                            <div class="submenu-item">
+                                <a href="/product.html"><img src="https://via.placeholder.com/150x150"
+                                        alt="menu-banner" /></a>
+                                <label>CREAMY MATTE LIQUD LIPSTICK</label>
+                            </div>
+                            <div class="submenu-item">
+                                <a href="/product.html"><img src="https://via.placeholder.com/150x150"
+                                        alt="menu-banner" /></a>
+                                <label>INTENSE HI BLEND EYE SHADOW STICK</label>
+                            </div>
+                            <div class="submenu-item">
+                                <a href="/product.html"><img src="https://via.placeholder.com/150x150"
+                                        alt="menu-banner" /></a>
+                                <label>HI DEF SHOOTHING KAJAL</label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-item"><a href="#Home" class="nav-link">About</a></li>
             </ul>
             <div class="menu-right d-flex align-items-center">
-                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="heroicon-ui"
-                        d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
-                </svg>
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: none;
-                                stroke: #fff;
-                                stroke-linejoin: round;
-                                stroke-width: 2px;
-                            }
-                        </style>
-                    </defs>
-                    <title />
-                    <g data-name="159-Shopping Bag" id="_159-Shopping_Bag">
-                        <rect class="cls-1" height="24" width="26" x="3" y="7" />
-                        <path class="cls-1" d="M10,12V2a1,1,0,0,1,1-1h5" />
-                        <path class="cls-1" d="M22,12V2a1,1,0,0,0-1-1H16" />
-                        <line class="cls-1" x1="7" x2="13" y1="12" y2="12" />
-                        <line class="cls-1" x1="19" x2="25" y1="12" y2="12" />
-                    </g>
-                </svg>
-                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path class="heroicon-ui"
-                        d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
-                </svg>
+                <a href="#">
+                    <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="heroicon-ui"
+                            d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
+                    </svg>
+                </a>
+                <a href="javscript:void(0);" class="shopping-bag">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="159-Shopping Bag" id="_159-Shopping_Bag">
+                            <rect class="cls-1" height="24" width="26" x="3" y="7" />
+                            <path class="cls-1" d="M10,12V2a1,1,0,0,1,1-1h5" />
+                            <path class="cls-1" d="M22,12V2a1,1,0,0,0-1-1H16" />
+                            <line class="cls-1" x1="7" x2="13" y1="12" y2="12" />
+                            <line class="cls-1" x1="19" x2="25" y1="12" y2="12" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="heroicon-ui"
+                            d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                    </svg>
+                </a>
             </div>
         </nav>
     </header>
+    <div class="bacground-overlay"></div>
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-header"><a href="javascript:void(0)" class="close-mobile-menu">X</a></div>
+        <div class="mobile-menu-continer"></div>
+    </div>
     <section class="body-content">
         <div class="row no-gutters collection-slider">
             <div class="col">
@@ -564,30 +670,54 @@
                                                     sapiente ea proident. </div>
                                             </div>
                                             <div class="bestmatches-box pb-4">
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
-                                                <span class="rounded-circle best-match-indicators">
-                                                </span>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
+                                                <div class="best-match-indicators"
+                                                    style="background-image: url('https://via.placeholder.com/400x400')">
+                                                    <span>Ingredient</span>
+                                                </div>
                                             </div>
                                             <div class="full-page-link">
                                                 <h3><a href="#">Click to open full page</a></h3>
@@ -604,31 +734,55 @@
                                         <h2>Select shades to comapre</h2>
                                     </div>
                                     <div class="cs-body">
-                                        <div class="cs-box pb-4">
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators active">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators active">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators active">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators active">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators active">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
-                                            <span class="rounded-circle best-match-indicators">
-                                            </span>
+                                        <div class="bestmatches-box pb-4">
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
+                                            <div class="best-match-indicators"
+                                                style="background-image: url('https://via.placeholder.com/400x400')">
+                                                <span>Ingredient</span>
+                                            </div>
                                         </div>
                                         <div class="shaded-boxes">
                                             <div class="shade-box">
@@ -1014,8 +1168,8 @@
                 <input type="submit" class="btn btn-outline-dark btn-submit" name="submitSubscribe" value="SUBMIT" />
             </form>
         </div>
-        <div class="row no-gutters">
-            <div class="col-sm">
+        <div class="footer-nav">
+            <div class="footer-nav-item">
                 <h3>Shop</h3>
                 <ul>
                     <li><a href="#">Eyes</a></li>
@@ -1023,14 +1177,14 @@
                     <li><a href="#">Face</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="footer-nav-item">
                 <h3>About</h3>
                 <ul>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Brand</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="footer-nav-item">
                 <h3>Support</h3>
                 <ul>
                     <li><a href="#">Shipping & Features</a></li>
@@ -1038,7 +1192,7 @@
                     <li><a href="#">Reviews</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="footer-nav-item">
                 <h3>CAREERS</h3>
                 <ul>
                     <li><a href="#">Shipping & Features</a></li>
@@ -1046,7 +1200,7 @@
                     <li><a href="#">Reviews</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="footer-nav-item">
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="#">Shipping & Features</a></li>
@@ -1054,13 +1208,82 @@
                     <li><a href="#">Reviews</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 social-links"> Follow us <a href="#" title="Facebook"><img alt="Facebook"
+            <div class="footer-nav-item social-links"> Follow us <a href="#" title="Facebook"><img alt="Facebook"
                         src="./images/facebook.png" /></a>
                 <a href="#" title="Instagram"><img alt="Instagram" src="./images/instagram.png" /></a>
                 <a href="#" title="Twitter"><img alt="Twitter" src="./images/twitter.png" /></a>
             </div>
         </div>
     </footer>
+    <aside class="mini-cart">
+        <div class="mini-cart-wrapper">
+            <h2 class="text-center">CART <a href="javascript:void(0)" class="mini-cart-close"><img
+                        src="images/right-arrow.png"></a></h2>
+            <progress class="progress-bar" value="90" max="100"></progress>
+            <label>50 Rs Away from free shipping</label>
+            <div class="mini-cart-content">
+                <div class="cart-items">
+                    <div class="cart-line-item">
+                        <div class="product-box">
+                            <img src="https://via.placeholder.com/100x100" />
+                            <p>Product</p>
+                        </div>
+                        <select class="product-shades">
+                            <option>ROSE</option>
+                        </select>
+                        <div class="product-quantity my-3">
+                            <span class="qty-minus">-</span>
+                            <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1" />
+                            <span class="qty-plus">+</span>
+                        </div>
+                        <label class="m-0 product-price pr-2">
+                            <a href="javascript:void(0)" class="remove-item"><img src="images/delete-icon.png" /></a>
+                            <span>&#8377;500</span>
+                        </label>
+                    </div>
+                    <div class="cart-line-item">
+                        <div class="product-box">
+                            <img src="https://via.placeholder.com/100x100" />
+                            <p>Product</p>
+                        </div>
+                        <select class="product-shades">
+                            <option>ROSE</option>
+                        </select>
+                        <div class="product-quantity my-3">
+                            <span class="qty-minus">-</span>
+                            <input type="text" name="product-qty" class="product-qty" maxlength="4" value="1" />
+                            <span class="qty-plus">+</span>
+                        </div>
+                        <label class="m-0 product-price pr-2">
+                            <a href="javascript:void(0)" class="remove-item"><img src="images/delete-icon.png" /></a>
+                            <span>&#8377;500</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cart-cross-sell">
+                    <div class="d-flex product-box-crosssell">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80" />
+                            <label>Product</label>
+                        </div>
+                        <label class="m-0">&#8377;500</label>
+                        <button class="btn btn-dark btn-addtocart">Add To cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-promo-code">
+                <input type="text" placeholder="PROMOCODE" name="promocode" class="form-control promocode-input" />
+                <button class="btn btn-light btn-promocode-apply">APPLY</button>
+            </div>
+            <div>
+                <label>TOTAL</label>
+                <label>&#8377;2500</label>
+            </div>
+            <div class="checkout-button">
+                <button class="btn btn-dark btn-checkout">Check Out</button>
+            </div>
+        </div>
+    </aside>
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -1073,6 +1296,7 @@
     </script>
     <!-- bxSlider Javascript file -->
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
         $(document).ready(function () {
             $('.bxslider').bxSlider({
@@ -1094,7 +1318,22 @@
             $('body').on('click', '.collection-shades', function () {
                 $(this).closest('.collection-box').find(".shades-box").toggleClass("active");
             });
+            $(window).resize(function () {
+                equalizeCircleHeightAndWidth('best-match-indicators');
+            });
         });
+        $("#myCollectionModal").on('shown.bs.modal', function () {
+            equalizeCircleHeightAndWidth('best-match-indicators');
+        });
+        $("#myCollectionModal").on("hidden.bs.modal", function () {
+            $('#nav-home-tab').trigger('click')
+        });
+
+        function equalizeCircleHeightAndWidth(className) {
+            var $ingredientBox = $("." + className);
+            var width = $ingredientBox.width();
+            $ingredientBox.height(width);
+        }
     </script>
 </body>
 

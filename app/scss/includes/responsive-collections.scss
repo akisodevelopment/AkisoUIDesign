@@ -1,0 +1,27 @@
+@media only screen and (max-width : 768px) {
+
+    .collection-container {
+        .collection-categories {
+            display: block;
+
+            .collection-box {
+                width: 100%;
+
+                &.large {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .product-tabs #nav-tabContent .shaded-boxes .shade-box {
+        width: 50%;
+    }
+
+    .filter-box .filters .filter {
+        display: block;
+        width: 100%;
+        flex: unset;
+        margin: 0.625rem auto;
+    }
+}

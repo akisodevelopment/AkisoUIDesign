@@ -267,8 +267,8 @@
     bottom: -30px; }
 
 .product-tabs #nav-tabContent {
-  width: 90%;
-  margin: auto; }
+  margin: 20px auto;
+  max-width: 980px; }
   .product-tabs #nav-tabContent .product-header {
     display: flex; }
     .product-tabs #nav-tabContent .product-header .product-name {
@@ -276,15 +276,6 @@
   .product-tabs #nav-tabContent .product-body .read-more-btn {
     text-align: center;
     display: block; }
-  .product-tabs #nav-tabContent .product-body .bestmatches-box {
-    display: block;
-    text-align: center; }
-  .product-tabs #nav-tabContent .product-body .best-match-indicators {
-    width: 100px;
-    height: 100px;
-    background: #cccccc;
-    display: inline-block;
-    margin: 1rem; }
   .product-tabs #nav-tabContent .product-body .full-page-link {
     text-align: center;
     text-decoration: underline; }
@@ -296,19 +287,34 @@
     text-align: center; }
     .product-tabs #nav-tabContent .product-body .addtocart-btn .btn {
       font-size: 20px; }
-  .product-tabs #nav-tabContent .cs-body .cs-box .best-match-indicators {
-    width: 100px;
-    height: 100px;
-    background: #cccccc;
-    display: inline-block;
-    margin: 1rem; }
-    .product-tabs #nav-tabContent .cs-body .cs-box .best-match-indicators.active {
-      border: 1px solid #000; }
-  .product-tabs #nav-tabContent .cs-body .shaded-boxes .shade-box {
+  .product-tabs #nav-tabContent .bestmatches-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 50px; }
+    .product-tabs #nav-tabContent .bestmatches-box .best-match-indicators {
+      display: flex;
+      flex: 1 0 calc(21% - 80px);
+      margin: 10px 40px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 50%;
+      color: #000;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 400; }
+      .product-tabs #nav-tabContent .bestmatches-box .best-match-indicators span {
+        opacity: 0; }
+      .product-tabs #nav-tabContent .bestmatches-box .best-match-indicators:hover {
+        background-image: none !important; }
+        .product-tabs #nav-tabContent .bestmatches-box .best-match-indicators:hover span {
+          opacity: 1; }
+  .product-tabs #nav-tabContent .shaded-boxes .shade-box {
     width: 20%;
     height: 400px;
     float: left; }
-    .product-tabs #nav-tabContent .cs-body .shaded-boxes .shade-box span {
+    .product-tabs #nav-tabContent .shaded-boxes .shade-box span {
       background: #000;
       width: 100%;
       height: 100%;
@@ -336,3 +342,18 @@
   content: '\2665';
   color: red;
   font-size: 2rem; }
+
+@media only screen and (max-width: 768px) {
+  .collection-container .collection-categories {
+    display: block; }
+    .collection-container .collection-categories .collection-box {
+      width: 100%; }
+      .collection-container .collection-categories .collection-box.large {
+        width: 100%; }
+  .product-tabs #nav-tabContent .shaded-boxes .shade-box {
+    width: 50%; }
+  .filter-box .filters .filter {
+    display: block;
+    width: 100%;
+    flex: unset;
+    margin: 0.625rem auto; } }
